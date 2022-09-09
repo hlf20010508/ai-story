@@ -176,6 +176,7 @@ def main(title, num = 3):
 
                 print("=" * 40 + " SAMPLE " + str(generated) + " " + "=" * 40)
                 text = ''.join(text).replace('##', '').strip()
+                text = text[:text.rfind('。') + 1]
                 # text = ''.join(text.split('\n')[:-1])
                 print(text)
                 f.write(text + '\n')
