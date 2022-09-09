@@ -1,0 +1,1 @@
+wget -P GPT2_Chinese/model/txt https://github.com/hlf20010508/ai-story/releases/download/model/pytorch_model.bin
