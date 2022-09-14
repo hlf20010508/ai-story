@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <el-row>
-      <h1 class="index-title">智能故事续写系统</h1>
+      <h1 class="index-title">中文文章续写系统</h1>
     </el-row>
     <el-row>
       <el-form :inline="true" class="index-form">
@@ -9,7 +9,7 @@
           <el-input
             class="index-input"
             v-model="beginText"
-            placeholder="请输入故事的开头"
+            placeholder="请输入文章的开头"
             :clearable="true"
             @keyup.enter.native="getOutput"
             >\
