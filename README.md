@@ -1,5 +1,9 @@
 # ai-story
-> 智能故事续写系统
+> 中文文章续写系统
+
+## 界面展示
+![](https://user-images.githubusercontent.com/76218469/190095043-63e4c8e5-5dc1-49a3-a200-a710e3a8c5bd.png)
+
 
 ## 下载模型
 ```sh
