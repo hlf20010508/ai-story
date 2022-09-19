@@ -17,5 +17,5 @@ pipenv sync
 
 ## 运行
 ```py
-pipenv run flask run -p 8080 -h 0.0.0.0
+pipenv run python app.py
 ```
