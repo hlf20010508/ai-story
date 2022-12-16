@@ -10,7 +10,12 @@
 bash model.sh
 ```
 
+## 安装环境
+```sh
+pipenv sync
+```
+
 ## 运行
 ```py
-flask run -p 8080 -h 0.0.0.0
+pipenv run python app.py
 ```
