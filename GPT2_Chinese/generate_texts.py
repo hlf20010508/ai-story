@@ -133,7 +133,13 @@ def main(title, num = 3):
     articles_per_title = args.articles_per_title  # 这里定义一个标题生成多少篇文章
     save_path = args.save_path  # 设置存到哪
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "cpu"
+    if torch.cuda.is_available():
+        device = "cuda"
+    elif torch.backends.mps.is_available():
+        # device = "mps"
+        device = "cpu"
+    print("The device is %s"%device)
 
     tokenizer = tokenization_bert.BertTokenizer(vocab_file=args.tokenizer_path)
     model = GPT2LMHeadModel.from_pretrained(args.model_path)
